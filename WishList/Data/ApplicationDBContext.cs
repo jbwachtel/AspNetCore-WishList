@@ -9,19 +9,10 @@ namespace WishList.Data
 {
     public class ApplicationDBContext : DBContext
     {
-        public ApplicationDBContext()
+        public ApplicationDBContext(DbContextOptions options) : base(options)
         {
         }
 
-        public ApplicationDBContext() : base(options)
-        {
-            var DbContextOptions(options);
-        }
-
-        public var Items(DbSet<Item>)
-        {
-            get{}
-            set{ }
-        }
+        public (DbSet<Item>) Items { get; set; }
     }
 }

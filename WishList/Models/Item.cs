@@ -8,13 +8,10 @@ namespace WishList.Models
 {
     public class Item
     {
-        public int Id;
-        
+        public int Id { get; set; }
 
-        public string Description(required, MaxLength(50))
-        {
-
-        }
+        [Required, MaxLength(50)]
+        public string Description { get; set; }
         
     }
 

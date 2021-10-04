@@ -8,12 +8,12 @@ namespace WishList.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public ActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Error()
+        public ActionResult Error()
         {
             return View();
         }

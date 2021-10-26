@@ -8,7 +8,7 @@ namespace WishList.Data
 {
     public class DBContext
     {
-        public DBContext(DbContextOptions options)
+        public DBContext()
         {
         }
     }
